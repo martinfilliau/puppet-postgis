@@ -15,6 +15,12 @@ class postgis::ubuntu::v9-1 inherits postgis::ubuntu::base {
       }
     }
 
+    "precise" : {
+        Package["postgresql-postgis"] {
+            name => "postgresql-9.1-postgis"
+        }
+    }
+
     default: {
       fail "postgresql-postgis 9.1 not available for ${operatingsystem}/${lsbdistcodename}"
     }

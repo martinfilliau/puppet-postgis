@@ -10,7 +10,7 @@ class postgis {
     Ubuntu: {
       case $lsbdistcodename {
         lucid  :   { include postgis::ubuntu::v8-4 }
-        oneiric:   { include postgis::ubuntu::v9-1 }
+        oneiric,precise :   { include postgis::ubuntu::v9-1 }
         default:   { fail "postgis not available for ${operatingsystem}/${lsbdistcodename}"}
       }
     }

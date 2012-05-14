@@ -1,4 +1,4 @@
-class postgis::v8-4 {
+class postgis::v9-1 {
   case $operatingsystem {
     Debian: {
       case $lsbdistcodename {
